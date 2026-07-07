@@ -1,14 +1,14 @@
 /* Global styles */
 :root {
-  --bg: #f4fbff;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --primary: #0077b6;
-  --primary-dark: #005f8e;
+  --primary: #001aff;
+  --primary-dark: #1900ff;
   --text: #0f172a;
-  --muted: #475569;
-  --accent: #38bdf8;
+  --muted: #48566a;
+  --accent: #001aff;
   --success: #16a34a;
-  --border: #dbeafe;
+  --border: #81ccff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -217,6 +217,15 @@ textarea {
   color: var(--muted);
 }
 
+.hero-image {
+  background-image: url("ilustracao agua potavel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 320px;
+  width: 100%;
+}
+
 .contact-form {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -259,17 +268,6 @@ textarea {
   margin-top: 2rem;
 }
 
-.timeline article {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 1.25rem;
-  padding: 1.25rem;
-}
-
-.timeline h3 {
-  margin: 0 0 0.5rem;
-}
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -284,7 +282,7 @@ textarea {
 @media (max-width: 700px) {
   .header-content {
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .main-nav {
