@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - ODS 6 Água Potável</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="brand">
+        <h1>Água para Todos</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Página Principal</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="content container">
+      <h2>Contato</h2>
+      <p>Use este formulário para enviar sugestões ou relatar necessidades da sua comunidade sobre água e saneamento.</p>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensagem</button>
+        <p id="form-response" class="form-response"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Projeto educativo sobre ODS 6 - Água potável e saneamento.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
